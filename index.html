@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Punnett Squares</title>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <script src="min/main.min.js"></script>
+  </head>
+  <body onload="loaded()" onkeydown="key(event)">
+    <div>
+      <table>
+        <tr>
+          <td class="noborder">
+          </td>
+          <td>
+            <div class="textdiv"><input type="text" class="textbox" id="th1" readonly disabled></input></div>
+          </td>
+          <td>
+            <div class="textdiv"><input type="text" class="textbox" id="th2" readonly disabled></input></div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="textdiv"><input type="text" class="textbox" id="th3" readonly disabled></input></div>
+          </td>
+          <td>
+            <div class="textdiv"><input type="text" class="textbox" id="tc1"></input></div>
+          </td>
+          <td>
+            <div class="textdiv"><input type="text" class="textbox" id="tc2"></input></div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="textdiv"><input type="text" class="textbox" id="th4" readonly disabled></input></div>
+          </td>
+          <td>
+            <div class="textdiv"><input type="text" class="textbox" id="tc3"></input></div>
+          </td>
+          <td>
+            <div class="textdiv"><input type="text" class="textbox" id="tc4"></input></div>
+          </td>
+        </tr>
+      </table>
+      <div class="flex"><span>Percent chance of recessive trait:</span><input type="number" id="p1"></input></div>
+      <div class="flex"><span>Percent chance of dominant trait:</span><input type="number" id="p2"></input></div>
+      <div class="flex"><button id="check" onclick="check()">Check</button></div>
+
+    </div>
+  </body>
+</html>
